@@ -1,0 +1,57 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+  <script type="text/javascript" src="/WeBlog/static/js/jquery-1.12.4.min.js"></script>
+  <link href="/WeBlog/static/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="/WeBlog/static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <head>
+   <title>我们的博客 www.WeBlog.com</title>
+  </head>
+  <body>
+    <div id="modal_regist" class="modal fade" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">这里可以改的</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="col-sm-2 control-label">用户名</label>
+                <div class="col-sm-10">
+                  <input type="text" name="empName" class="form-control" id="empName_input" placeholder="由 x - x 个字符组成，可以包含! _ `，不可以使用中文">
+                  <span class="help-block"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">密码</label>
+                <div class="col-sm-10">
+                  <input type="text" name="email" class="form-control" id="password_input" placeholder="密码随便写，别忘了就行">
+                  <span class="help-block"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label">确认密码</label>
+                <div class="col-sm-10">
+                  <input type="text" name="email" class="form-control" id="repassword_input" placeholder="真的别忘了！">
+                  <span class="help-block"></span>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">不注册了</button>
+            <button type="button" class="btn btn-primary">注册</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="btn_regist" class="btn btn-success" data-toggle="modal" data-target="#modal_regist">注册</button>
+  </body>
+<script>
+  $(function () {
+    $("#btn_regist").click(function () {
+    })
+  });
+</script>
+</html>
